@@ -1,0 +1,3 @@
+#!/bin/bash
+
+AWS_PROFILE=emileswarts aws s3 sync /Users/emileswarts/code/other/emileswarts.com s3://emileswarts.com --acl public-read --exclude ".git/*" --exclude deploy
