@@ -1,3 +1,12 @@
 #!/bin/bash
 
-AWS_PROFILE=emileswarts aws s3 sync /Users/emileswarts/code/other/emileswarts.com s3://emileswarts.com --acl public-read --exclude ".git/*" --exclude deploy
+AWS_PROFILE=emileswarts aws s3 sync /Users/emileswarts/code/other/emileswarts.com s3://www.emileswarts.com --acl public-read \
+--exclude ".git/*" \
+--exclude "deploy" \
+--exclude "gulpfile.js" \
+--exclude "package-lock.json" \
+--exclude "package.json" \
+--exclude "README.md" \
+--exclude "LICENSE" \
+--exclude "yarn.lock" \
+--exclude "node_modules/*"
